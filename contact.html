@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="header">  <!--header of this htmlpage-->
+    <center><a href="main.html"><img src="8-removebg-preview (1).png" alt="flex" height="150" width="260" style="padding: .1px;" ></a></center>
+  </div>
+<font color="White">
+    
+    <div class="container"> <!--container class for contact page-->
+        <form action="main.html"> <!--contact form starts-->
+      
+          <label>Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required autocomplete="on" required oninvalid="this.setCustomValidity('Enter Name Here')"
+          oninput="this.setCustomValidity('')" /><br/><br/>
+          <label>Age</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Age.." maxlength="3">
+          <label>Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Email.." maxlength="100" required oninvalid="this.setCustomValidity('Enter Email Here')"
+          oninput="this.setCustomValidity('')" autocomplete="on"/><br/><br/>
+      
+          <label for="country">City</label>
+          <select name="city">
+            <option>--select city--</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Kolkata</option>
+            <option value="Pune">Mumbai</option>
+          </select>
+      
+          <label for="subject">Ellaborate</label>
+          <textarea id="subject" name="subject" placeholder="Ellaborate Issue.." style="height:100px" maxlength="200"></textarea>
+          <label>Upload Supporting Document</label><br/><br/>
+          <input type="file" name="file" value="file" accept=".pdf,.png" /><br/><br/>
+          <input type="submit"  value="Submit" />  
+      
+         
+        </form> <!--end of form-->
+    </div> <!--end of container-->
+</font>
+<div class="footer"> <!--footer with social media icons--> <!--footer starts-->
+  <a href="#" class="socialmedia">
+    <img src="instagram.webp" >
+  </a>
+  <a href="#" class="socialmedia">
+    <img src="twitter.webp" >
+  </a>
+  <a href="#" class="socialmedia">
+    <img src="facebook.webp" >
+  </a>
+  <a href="#" class="socialmedia">
+    <img src="github.webp" >
+  </a>
+  <h3>&copy; Vineet Shukla</h3>
+</div> 
+ <!--footer ends-->
+</body>
+</html>

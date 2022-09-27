@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body background="bg-create.JPG">
+
+    <div class="header">  <!--header of this htmlpage-->
+      <center><a href="main.html"><img src="8-removebg-preview (1).png" alt="flex" height="150" width="260" style="padding: .1px;" ></a></center>
+    </div>
+      
+      <div class="navbar"> <!--navigation bar at top of this page-->
+        <font face="poppins"><a href="main.html">Home</a></font>
+        <font face="poppins"><a href="blog.html">Blogs</a></font>
+        <font face="poppins"><a href="faq.html">FAQ's</a></font>
+        <font face="poppins"><a href="contact.html">Contact</a></font>
+        
+       
+      </div><br/><br/>
+  <form action="contact.html" > <!--form tag for writing new blog and then submit via submit button-->     
+      <div class="cont" >
+        <label for="subject">Heading</label>
+        <textarea id="subject" name="subject" required oninvalid="this.setCustomValidity('Enter Heading Here')"
+        oninput="this.setCustomValidity('')" autocomplete="on" placeholder="Blog Heading.." style="height:50px" maxlength="150"></textarea>
+        <label for="subject">Subject</label>
+        <textarea id="subject" oninvalid="this.setCustomValidity('Enter Content Here')"
+        oninput="this.setCustomValidity('')" autocomplete="on"  name="subject" placeholder="Blog Subject.." style="height:400px" maxlength="1000" required ></textarea>
+        <label>Add Photo</label><br/><br/>
+        <input type="file" multiple required oninvalid="this.setCustomValidity('Add Images Here')"
+        oninput="this.setCustomValidity('')" autocomplete="on" name="file" value="file" accept=".pdf,.png"  /><br/><br/>
+        <center><input type="submit" onclick="alert('Blog saved ,will be visible soon!!\nProceed to HomePage.')" value="Submit" /></center>
+  </form>    <!--end of form-->
+      </div>
+      <div class="footer"> <!--footer with social media icons--> <!--footer starts-->
+        <a href="#" class="socialmedia">
+          <img src="instagram.webp" >
+        </a>
+        <a href="#" class="socialmedia">
+          <img src="twitter.webp" >
+        </a>
+        <a href="#" class="socialmedia">
+          <img src="facebook.webp" >
+        </a>
+        <a href="#" class="socialmedia">
+          <img src="github.webp" >
+        </a>
+        <h3>&copy; Vineet Shukla</h3>
+      </div> 
+       <!--footer ends-->
+</body>
+</html>
